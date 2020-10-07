@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+  <title>quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fontawesome/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="s2VPaKzl"></script>
+
+  
+
+
+
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <a class="navbar-brand" href="#"></a>
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">سياسة الخصوصية</a>
+        <a class="nav-item nav-link" href="#">شروط الاستخدام</a>
+        <a class="nav-item nav-link" href="#">سرية معلوماتك</a>
+
+        <a class="nav-item nav-link" id="linkExtra"> سجل دخولك عبر <a href="#" id="linkA"> بريدك </a> &nbsp; <span id="linkspan"> أو </span> &nbsp; <a href="#" id="linkA"> فيسبوك </a> &nbsp;
+        <span id="linkspan"> أو </span> &nbsp; <a href="#" id="linkA"> تويتر</a>  </p>
+
+    </div>
+  </nav>
+
+
+
+
+
+	<nav class="navbar white navbar-default" id="NavbarSecond">
+      <div class="logo"></div>
+        <div class="container-fluid" id="container-fluid">
+         <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".mainnav" aria-expanded="false" aria-controls="navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          </div>
+          <div id="navbarTwo" class="navbar-collapse collapse mainnav">
+            <img src="images/Egy.png">
+            <ul class="nav navbar-nav" id="navbar-nav-Two">
+              <li><a class="scroller" href="#proj-head">الرئيسية</a></li>
+
+              <li class="dropdown-item">
+                <div class="dropdown">
+                  <i class="fa fa-angle-down" aria-hidden="true"  id="dropdownI"></i>
+                  <button class="dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    الاقسام الموجودة  
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">رياضي</a>
+                    <a class="dropdown-item" href="#">متنوع</a>
+                    <a class="dropdown-item" href="#">اختبارات ذكاء</a>
+                    <a class="dropdown-toggle" href="#">اختبارات شخصية</a>
+
+                  </div>
+                </div>
+</li>
+
+
+<li class="dropdown-item">
+  <div class="dropdown">
+    <i class="fa fa-angle-down" aria-hidden="true" id="dropdownI"></i>
+    <button class="dropdown-toggle"  id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      نوعية الاختبارت  
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">اختبارات اسئلة</a>
+      <a class="dropdown-item" href="#">اختبارات صور</a>
+
+    </div>
+  </div>
+</li>
+
+
+<li><a href="#section4">المقالات</a></li>
+              <li><a href="#section6">Araic</a></li>
+
+<li>
+  <div class="fb-like" id="likeButton" data-href="https://www.facebook.com/OfficialEgyWeb" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false" style="width:100%;height;100%"></div>
+</li> 
+
+<a href="https://egyquiz.egyweb.info/login" class="btn btn-primary text-white" id="loginButton">تسجيل دخول</a>
+<a href="https://egyquiz.egyweb.info/register" class="btn btn-success text-white" id="logoutButton">تسجيل حساب</a>
+
+
+</ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+	  
+	  <script>
+		$(document).ready(function () {
+			  $(".navbar-toggle").on("click", function () {
+				    $(this).toggleClass("active");
+			  });
+		});
+    </script>
+    
+    <ul class="pagination" role="navigation">
+        
+        <li class="page-item disabled" aria-disabled="true" aria-label="» Previous">
+      <span class="page-link" aria-hidden="true">‹</span>
+      </li>
+      
+      
+        
+      
+      
+                                                            <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                    <li class="page-item"><a class="page-link" href="testing.html">2</a></li>
+                                                                    <li class="page-item"><a class="page-link" href="test.html">3</a></li>
+                                            
+      
+        <li class="page-item">
+      <a class="page-link" href="testing.html" rel="next" aria-label="Next «">›</a>
+      </li>
+      </ul>
+      
+</body>
+</html>

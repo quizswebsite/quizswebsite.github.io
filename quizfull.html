@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+  <title>quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fontawesome/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Poppins&display=swap" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v8.0" nonce="s2VPaKzl"></script>
+
+  
+
+
+
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <a class="navbar-brand" href="#"></a>
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">سياسة الخصوصية</a>
+        <a class="nav-item nav-link" href="#">شروط الاستخدام</a>
+        <a class="nav-item nav-link" href="#">سرية معلوماتك</a>
+
+        <a class="nav-item nav-link" id="linkExtra"> سجل دخولك عبر <a href="#" id="linkA"> بريدك </a> &nbsp; <span id="linkspan"> أو </span> &nbsp; <a href="#" id="linkA"> فيسبوك </a> &nbsp;
+        <span id="linkspan"> أو </span> &nbsp; <a href="#" id="linkA"> تويتر</a>  </p>
+
+    </div>
+  </nav>
+
+
+
+
+
+	<nav class="navbar white navbar-default" id="NavbarSecond">
+      <div class="logo"></div>
+        <div class="container-fluid" id="container-fluid">
+         <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".mainnav" aria-expanded="false" aria-controls="navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          </div>
+          <div id="navbarTwo" class="navbar-collapse collapse mainnav">
+            <img src="images/Egy.png">
+            <ul class="nav navbar-nav" id="navbar-nav-Two">
+              <li><a class="scroller" href="#proj-head">الرئيسية</a></li>
+
+              <li class="dropdown-item">
+                <div class="dropdown">
+                  <i class="fa fa-angle-down" aria-hidden="true"  id="dropdownI"></i>
+                  <button class="dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    الاقسام الموجودة  
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">رياضي</a>
+                    <a class="dropdown-item" href="#">متنوع</a>
+                    <a class="dropdown-item" href="#">اختبارات ذكاء</a>
+                    <a class="dropdown-toggle" href="#">اختبارات شخصية</a>
+
+                  </div>
+                </div>
+</li>
+
+
+<li class="dropdown-item">
+  <div class="dropdown">
+    <i class="fa fa-angle-down" aria-hidden="true" id="dropdownI"></i>
+    <button class="dropdown-toggle"  id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      نوعية الاختبارت  
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">اختبارات اسئلة</a>
+      <a class="dropdown-item" href="#">اختبارات صور</a>
+
+    </div>
+  </div>
+</li>
+
+
+<li><a href="#section4">المقالات</a></li>
+              <li><a href="#section6">English</a></li>
+
+<li>
+  <div class="fb-like" id="likeButton" data-href="https://www.facebook.com/OfficialEgyWeb" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false" style="width:100%;height;100%"></div>
+</li> 
+
+<a href="https://egyquiz.egyweb.info/login" class="btn btn-primary text-white" id="loginButton">تسجيل دخول</a>
+<a href="https://egyquiz.egyweb.info/register" class="btn btn-success text-white" id="logoutButton">تسجيل حساب</a>
+
+
+</ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+	  
+	  <script>
+		$(document).ready(function () {
+			  $(".navbar-toggle").on("click", function () {
+				    $(this).toggleClass("active");
+			  });
+		});
+    </script>
+    
+
+   
+    
+    <div class="container" id="pageContent">
+        <div class="row">
+        
+        
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"> 
+        
+        <div class="quizs">
+        
+          <h4 class="quizRightH3"> أبحث عن أختبار </h4>
+        
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="أكتب شئ ليتم البحث عنة" name="s" value="" id="searchInput">
+            <div class="input-group-append">
+                <button class="btn searchButton" type="submit" id="button-addon2">أبحث</button>
+        
+            </div>
+        
+        
+          </div>
+        
+        </div> 
+        
+        <br> <br> 
+        <div class="quistions">
+        
+          <h4 class="quizRightH3"> أكثر الاختبارات زيارة </h4>
+        
+        <ul class="quistionsItems">
+          <li><a href="https://egyquiz.egyweb.info/q/test-coriv19-online">هل أنا عندي كورونا <span class="btn quistionsButton1">4490</span></a>
+          </li>
+        
+          <li><a href="https://egyquiz.egyweb.info/q/test-coriv19-online">يمكنك الان أضافة اختبار ب... <span class="btn quistionsButton2">2479</span></a>
+            <span class="quistionsSpan"> </span>
+          </li>
+          <li><a href="https://egyquiz.egyweb.info/q/test-coriv19-online">شاهد كم تربح بناء علي صور... <span class="btn quistionsButton">2441</span></a>
+            <span class="quistionsSpan"> </span>
+          </li>
+          <li><a href="https://egyquiz.egyweb.info/q/test-coriv19-online">إطبع صورتك علي الدولار <span class="btn quistionsButton4">2275</span></a>
+            <span class="quistionsSpan"> </span>
+          </li>
+          <li><a href="https://egyquiz.egyweb.info/q/test-coriv19-online">أنا ضد فيروس كورونا <span class="btn quistionsButton5">1566</span></a>
+            <span class="quistionsSpan"> </span>
+          </li>
+        
+        </ul>
+        </div> 
+        
+        
+        <br> <br> 
+        <div class="visits">
+        
+          <h4 class="quizRightH3"> أكثر المقالات زيارة </h4>
+        
+        <ul class="quistionsItems">
+          <li><a href="https://egyquiz.egyweb.info/q/test-coriv19-online">تجربة علي عنوان المقال <span class="btn visitsButton">999</span></a>
+          </li>
+          <li><a href="https://egyquiz.egyweb.info/q/test-coriv19-online">تجربة علي عنوان المقال <span class="btn visitsButton">798</span></a>
+            <span class="quistionsSpan"> </span>
+          </li>
+          <li><a href="https://egyquiz.egyweb.info/q/test-coriv19-online">تجربة علي عنوان المقال <span class="btn visitsButton3">79367</span></a>
+            <span class="quistionsSpan"> </span>
+          </li>
+          <li><a href="https://egyquiz.egyweb.info/q/test-coriv19-online">تجربة علي عنوان المقال <span class="btn visitsButton">731</span></a>
+            <span class="quistionsSpan"> </span>
+          </li>
+          <li><a href="https://egyquiz.egyweb.info/q/test-coriv19-online">تجربة علي عنوان المقال <span class="btn visitsButton">7193</span></a>
+            <span class="quistionsSpan"> </span>
+          </li>
+        
+        </ul>
+        
+        
+        
+        
+        
+        </div> 
+        
+        </div> 
+
+
+
+
+        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12"> 
+            <div class="Headtext">
+
+            <h1 class="HeadtextHeading">هل أنا عندي كورونا</h1>
+
+
+            <div class="d-flex flex-column bd-highlight mb-3 text-center">
+                <div class="bd-highlight"><b> إعلانات Google</b></div>
+                <div class="bd-highlight"><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/javascript"></script>
+    <!-- أعلان مصور متجاوب -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2173799857232813" data-ad-slot="9081503661" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script type="text/javascript">
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+            <img class="img-thumbnail d-block m-auto" src="https://egyquiz.egyweb.info/images/test/1587552913.png" 
+            title="هل أنا عندي كورونا" id="Headtext-img">
+
+
+            <span class="custom-social custom-social-fb">
+              <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://egyquiz.egyweb.info/q/test-coriv19-online', 'facebook share', 'width=620, height:420'); return false ;" class="fa fa-facebook"></a>    
+              <br>
+              <a href="#" onclick="window.open('https://twitter.com/home?status=https://egyquiz.egyweb.info/q/test-coriv19-online', 'twitter share', 'width=620, height:420'); return false ;" class="fa fa-twitter shareIcon"> <a > 
+              <a href="#" onclick="window.open('https://api.whatsapp.com/send/?phone&text=https%3A%2F%2Fegyquiz.egyweb.info%2Fr%2FMTYwMTkxMjU0NS5qcGc%3D%2F28%2F42%3Ftype%3Dshare&app_absent=0', 'watsapp share', 'width=620, height:420'); return false ;" class="fa fa-whatsapp shareIcon-watsapp"></a>
+  
+            </span>
+            
+           
+
+            
+            <div class="d-flex flex-column bd-highlight mb-3 text-center">
+                <div class="bd-highlight"><b> إعلانات Google</b></div>
+                <div class="bd-highlight"><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/javascript"></script>
+    <!-- أعلان مصور متجاوب -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2173799857232813" data-ad-slot="9081503661" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script type="text/javascript">
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+
+
+<p class="Headtext-p">سنعرض عليك بعض الأسئلة التي ستحدد هل أنت مصاب بهذا المرض .</p>
+<a class="btn-lg btn btn-warning btn-block btn-test" href="https://egyquiz.egyweb.info/getq/30" id="Headtext-button">
+    <p class="Headtext-button-span"> قم بالاختبار الان</p> </a>
+    <div class="fb-comments" data-href="https://egyquiz.egyweb.info/q/test-coriv19-online" data-numposts="5" data-width="100%"></div>
+
+            </div>
+        </div>
+    
+    
+    
+    </div>
+
+
+    </div>
+
+
+
+
+    
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+  
+  
+  </div>
+  
+  <span class="moreExs-before"> </span>
+  <h4 class="moreExs"> المزيد من المسابقات في نفس القسم </h4> 
+  <span class="moreExs-after"> </span>
+
+  <section class="quizItemsTwo" style="margin-top:0px!important" >
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="quiz1" id="quizItmesTwo-q1">
+        <div class="quiz1-inside">
+          <span class="quiz1-spanBlue"> متنوع </span>
+          <span class="quiz1-spanRed"> اختبار اسئلة </span>
+      
+          <img src="images/quiz7.jpg">
+        </div>
+      
+        <div class="quiz1-inside2">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+          الأربعاء ٢٢ أبريل ٢٠٢٠ - ١٠:٠١ ص
+          <br>                
+          <i class="fa fa-bolt" id="boltIcon"></i> 
+          4464
+      <br>
+  
+  
+      <a href="https://egyquiz.egyweb.info/q/test-coriv19-online" id="quiz1-inside2a"> إطبع صورتك على الدولار </a>
+      <p class="quiz1-inside2p">إطبع صورتك على الدولار </p>
+  
+      <a href="https://egyquiz.egyweb.info/q/test-coriv19-online" class="btn testButton btn-block" id="testButton7">
+        <p class="testP"> أختبر الان <i class="fa fa-arrow-left"></i></p> </a> 
+      
+      
+      </div>
+      </div>
+      
+      </div>
+      
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      
+        <div class="quiz2">
+          <div class="quiz1-inside">
+            <span class="quiz1-spanBlue"> متنوع </span>
+            <span class="quiz1-spanRed"> اختبار اسئلة </span>
+        
+            <img src="images/quiz8.png">
+          </div>
+        
+          <div class="quiz1-inside2">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            الأربعاء ٢٢ أبريل ٢٠٢٠ - ١٠:٠١ ص
+            <br>                
+            <i class="fa fa-bolt" id="boltIcon"></i> 
+            4464
+        <br>
+        <a href="https://egyquiz.egyweb.info/q/test-coriv19-online" id="quiz1-inside2a"> انا ضد فيروس كورونا</a>
+        <p class="quiz1-inside2p">-اغسل يديك غسل اليدين من أهم الأشياء للوقاية من فيروس كورونا،...      </p>
+        
+        <a href="https://egyquiz.egyweb.info/q/test-coriv19-online" class="btn testButton btn-block"  id="testButton8">
+          <p class="testP"> أختبر الان <i class="fa fa-arrow-left"></i></p> </a> 
+        
+        
+        </div>
+        </div>
+        </div>
+      
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      
+        <div class="quiz3"  id="quizItmesTwo-q3">
+          <div class="quiz1-inside">
+            <span class="quiz1-spanBlue"> متنوع </span>
+            <span class="quiz1-spanRed"> اختبار اسئلة </span>
+        
+            <img src="images/quiz9.jpg">
+          </div>
+        
+          <div class="quiz1-inside2">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            الأربعاء ٢٢ أبريل ٢٠٢٠ - ١٠:٠١ ص
+            <br>                
+            <i class="fa fa-bolt" id="boltIcon"></i> 
+            4464
+        <br>
+        <a href="https://egyquiz.egyweb.info/q/test-coriv19-online" id="quiz1-inside2a">بطاقة تهنئة برمضان - أكتب اسمك على الصور</a>
+        <p class="quiz1-inside2p">بطاقة تهنئة برمضان - أكتب اسمك على الصور </p>
+        
+        <a href="https://egyquiz.egyweb.info/q/test-coriv19-online" class="btn testButton btn-block" id="testButton9">
+          <p class="testP"> أختبر الان <i class="fa fa-arrow-left"></i></p> </a> 
+        
+        
+        </div>
+        </div>
+      </div>
+    </div>
+
+    </section> 
+  
+  
+  
+
+
+
+  <section class="quizItemsTwo">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="quiz1" id="quizItmesTwo-q1">
+        <div class="quiz1-inside">
+          <span class="quiz1-spanBlue"> متنوع </span>
+          <span class="quiz1-spanRed"> اختبار اسئلة </span>
+      
+          <img src="images/quiz7.jpg">
+        </div>
+      
+        <div class="quiz1-inside2">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+          الأربعاء ٢٢ أبريل ٢٠٢٠ - ١٠:٠١ ص
+          <br>                
+          <i class="fa fa-bolt" id="boltIcon"></i> 
+          4464
+      <br>
+  
+  
+      <a href="https://egyquiz.egyweb.info/q/test-coriv19-online" id="quiz1-inside2a"> إطبع صورتك على الدولار </a>
+      <p class="quiz1-inside2p">إطبع صورتك على الدولار </p>
+  
+      <a href="https://egyquiz.egyweb.info/q/test-coriv19-online" class="btn testButton btn-block" id="testButton7">
+        <p class="testP"> أختبر الان <i class="fa fa-arrow-left"></i></p> </a> 
+      
+      
+      </div>
+      </div>
+      
+      </div>
+      
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      
+        <div class="quiz2">
+          <div class="quiz1-inside">
+            <span class="quiz1-spanBlue"> متنوع </span>
+            <span class="quiz1-spanRed"> اختبار اسئلة </span>
+        
+            <img src="images/quiz8.png">
+          </div>
+        
+          <div class="quiz1-inside2">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            الأربعاء ٢٢ أبريل ٢٠٢٠ - ١٠:٠١ ص
+            <br>                
+            <i class="fa fa-bolt" id="boltIcon"></i> 
+            4464
+        <br>
+        <a href="https://egyquiz.egyweb.info/q/test-coriv19-online" id="quiz1-inside2a"> انا ضد فيروس كورونا</a>
+        <p class="quiz1-inside2p">-اغسل يديك غسل اليدين من أهم الأشياء للوقاية من فيروس كورونا،...      </p>
+        
+        <a href="https://egyquiz.egyweb.info/q/test-coriv19-online" class="btn testButton btn-block"  id="testButton8">
+          <p class="testP"> أختبر الان <i class="fa fa-arrow-left"></i></p> </a> 
+        
+        
+        </div>
+        </div>
+        </div>
+      
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      
+        <div class="quiz3" id="quizItmesTwo-q3">
+          <div class="quiz1-inside">
+            <span class="quiz1-spanBlue"> متنوع </span>
+            <span class="quiz1-spanRed"> اختبار اسئلة </span>
+        
+            <img src="images/quiz9.jpg">
+          </div>
+        
+          <div class="quiz1-inside2">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            الأربعاء ٢٢ أبريل ٢٠٢٠ - ١٠:٠١ ص
+            <br>                
+            <i class="fa fa-bolt" id="boltIcon"></i> 
+            4464
+        <br>
+        <a href="https://egyquiz.egyweb.info/q/test-coriv19-online" id="quiz1-inside2a">بطاقة تهنئة برمضان - أكتب اسمك على الصور</a>
+        <p class="quiz1-inside2p">بطاقة تهنئة برمضان - أكتب اسمك على الصور </p>
+        
+        <a href="https://egyquiz.egyweb.info/q/test-coriv19-online" class="btn testButton btn-block" id="testButton9">
+          <p class="testP"> أختبر الان <i class="fa fa-arrow-left"></i></p> </a> 
+        
+        
+        </div>
+        </div>
+      </div>
+    </div>
+
+    </section> 
+  
+
+  <br> <br> <br> <br> <br> <br> 
+
+  <br> <br> <br>
+
+  
+  <br> <br> <br> <br> <br> <br> 
+
+  <br> <br> <br>
+  <br> <br> <br>
+  <br> <br> <br>
+
+  
+
+  <span class="custom-social custom-social-fb">
+    <span class="fa fa-facebook"></span>    
+  </span>
+  
+
+
+  <form id="question_30" method="post" action="http://localhost/quiztesting/quizfull.html" style="display: inherit">
+    <input type="hidden" name="_method" value="POST">                                <input type="hidden" name="_token" value="iR0v8hS8eSkLe5FyCAplwLd8ILToDge2ehGu06Ny">                                <div class="form-group">
+        <label class="text-right h5">1 - هل لديك صداع ؟</label>
+        <div class="row">
+            <div class="input-group col-md-12 mb-1">
+                <small class="text-danger"> يرجي اختيار اجابة</small>
+            </div>
+                                                                                                <div class="input-group col-md-12 mb-1 checkradio" data-itemid="ans0">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" id="ans0" name="ans" value="true" required="">
+                            <input type="hidden" name="correct" value="true">
+                        </div>
+                    </div>
+                    <input disabled="" value="لدي صداع بسيط ." type="text" for="ans0" class="form-control">
+                </div>
+                                                        <div class="input-group col-md-12 mb-1 checkradio" data-itemid="ans1">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" id="ans1" name="ans" value="false" required="">
+                            <input type="hidden" name="correct" value="false">
+                        </div>
+                    </div>
+                    <input disabled="" value="لدي صداع متوسط ." type="text" for="ans1" class="form-control">
+                </div>
+                                                        <div class="input-group col-md-12 mb-1 checkradio" data-itemid="ans2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" id="ans2" name="ans" value="true" required="">
+                            <input type="hidden" name="correct" value="true">
+                        </div>
+                    </div>
+                    <input disabled="" value="لدي صداع حاد ." type="text" for="ans2" class="form-control">
+                </div>
+                                                        <div class="input-group col-md-12 mb-1 checkradio" data-itemid="ans3">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" id="ans3" name="ans" value="false" required="">
+                            <input type="hidden" name="correct" value="false">
+                        </div>
+                    </div>
+                    <input disabled="" value="لا توجد اجابة ." type="text" for="ans3" class="form-control">
+                </div>
+                                                        <div class="input-group col-md-12 mb-1 checkradio" data-itemid="ans4">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" id="ans4" name="ans" value="false" required="">
+                            <input type="hidden" name="correct" value="false">
+                        </div>
+                    </div>
+                    <input disabled="" value="تجربة علي الاجابة" type="text" for="ans4" class="form-control">
+                </div>
+                                                </div>
+    </div>
+                                        <button type="submit" name="Next" class="btn btn-danger  btn-lg"><span class="h5 text-white"> السؤال التالي <i class="fas fa-angle-double-left"></i> </span></button>
+                                </form>
+
+<!-- footer -->
+
+<div class="container-fluid" id="footer">
+<div class="row">
+
+  <div class="col-lg-4 col-md-4 col-sm-4">
+    <h4 class="footerRight"> صفحات تهمك </h4>
+    <span class="footerRight-span"> </span>
+  
+  <ul class="footerUl">
+  <li> <a href="#"> الرئيسية </a> </li>
+  <li> <a href="#"> سياسة الخصوصية </a> </li>
+  <li> <a href="#"> شروط الاستخدام </a> </li>
+  <li> <a href="#"> سرية معلوماتك </a> </li>
+  <li> <a href="#"> تواصل معنا </a> </li>
+  
+  </ul>
+  
+  
+  
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-4">
+    <h4 class="footerRight"> الاقسام الموجودة </h4>
+    <span class="footerRight-span"> </span>
+  
+  <ul class="footerUl">
+  <li> <a href="#"> رياضي </a> </li>
+  <li> <a href="#"> متنوع </a> </li>
+  <li> <a href="#"> اختبارات ذكاء </a> </li>
+  <li> <a href="#"> اختبارات شخصية </a> </li>
+  
+  </ul>
+  
+  
+  </div>
+  
+
+
+  <div class="col-lg-4 col-md-4">
+
+    <h4 class="footerRight"> إيجي كويز v2 </h4>
+    <span class="footerRight-span"> </span>
+    
+    <p class="footerRight-p"> سكربت إيجي كويز النسخة الثانية هو سكربت لانشاء الاختبارات الترفيهية و الربح من خلال عرض الاعلانات علي الموقع بكل سهولة</p>
+    
+    
+    </div>
+    
+
+
+
+
+</div>
+
+
+
+</div>
+
+<div class="footerLine"></div> 
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="copyright">
+
+  <p>© 2020 كل الحقوق محفوظة <b>إيجي كويز v2</b> | <a href="https://egyweb.info" target="_blank" rel="dofollow">تصميم و برمجة مواقع</a> بواسطة <a href="https://egyweb.info" rel="dofollow" target="_blank">ايجي ويب</a>
+  </p>
+
+</div>
+
+
+</div>
+
+
+
+</body>
+</html>
